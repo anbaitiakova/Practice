@@ -1,0 +1,5 @@
+[06.07.2021 21:55:54][Information]: A lot of beer:)
+[06.07.2021 21:55:54][Error]: Lab about logger
+[06.07.2021 21:55:54][Critical]: pupupu:3
+[06.07.2021 21:55:54][Debug]: Something intersting
+[06.07.2021 21:55:54][Trace]: Hello!
