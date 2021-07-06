@@ -67,27 +67,27 @@ public:
     {
         auto myLambda = [](const uint16_t & value) -> uint16_t
         {
-            uint16_t number = 0;
+            uint16_t num = 0;
             uint16_t one = 1;
 
             for (uint16_t i = 0; i < 13; i++)
             {
                 if (one & value)
-                    number = i;
+                    num = i;
                 one <<= 1;
             }
-            return number;
+            return num;
         };
 
-        uint16_t value_new;
-        uint16_t degree_old = myLambda(b);
-        uint16_t degree_new = myLambda(a);
+        uint16_t newValue;
+        uint16_t _old = myLambda(b);
+        uint16_t _new = myLambda(a);
 
-        while (degree_old <= degree_new)
+        while (_old <= _new)
         {
-            value_new = b << (degree_new - degree_old);
-            a ^= value_new;
-            degree_new = myLambda(a);
+            newValue = b << (_new - _old);
+            a ^= newValue;
+            _new = myLambda(a);
         }
         return a;
     }
