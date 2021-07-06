@@ -1,0 +1,16 @@
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.csproj.AssemblyReference.cache
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.GeneratedMSBuildEditorConfig.editorconfig
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.AssemblyInfoInputs.cache
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.AssemblyInfo.cs
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.csproj.CoreCompileInputs.cache
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3.deps.json
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3.runtimeconfig.json
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3.runtimeconfig.dev.json
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3.dll
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/ref/Task_3.dll
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/bin/Debug/net5.0/Task_3.pdb
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.dll
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/ref/Task_3.dll
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.pdb
+/home/an_baitiakova/RiderProjects/Task_3/Task_3/obj/Debug/net5.0/Task_3.genruntimeconfig.cache
