@@ -10,31 +10,28 @@ namespace Task_3
             private Dictionary<string, (DateTime, T)> _cache;
             private TimeSpan _lifetime;
             private int _maxSize;
-            private int _currentSize;
 
             public ApplicationCache(TimeSpan time, int capacity)
             {
                 _cache = new Dictionary<string, (DateTime, T)>();
                 _lifetime = time;
                 _maxSize = capacity;
-                _currentSize = 0;
             }
-            public void ControlTimeOfLife(DateTime time)
+            public void ControlTimeOfLife()
             {
                 foreach (var it in _cache)
                 {
-                    TimeSpan tmp = time - it.Value.Item1;
+                    TimeSpan tmp = DateTime.Now - it.Value.Item1;
                     if (tmp >= _lifetime)
                         _cache.Remove(it.Key);
-                    _currentSize--;
-                }
+                }    
             }
             
             public void Save(string key, T data)
             {
                 if (_cache.TryGetValue(key, out _))
-                    throw new ArgumentException();
-                else if (_currentSize == _maxSize)
+                    throw new ArgumentException(nameof(key));
+                else if (_cache.Count == _maxSize)
                 {
                     TimeSpan old = TimeSpan.Zero;
                     string tmpKey = null;
@@ -49,27 +46,25 @@ namespace Task_3
                         _cache.Remove(tmpKey);
                     }
                     _cache.Add(key,(DateTime.Now, data));
-                    _currentSize++;
                 }
                 else
                 {
                     _cache.Add(key,(DateTime.Now, data));
-                    _currentSize++;
                 }
-                ControlTimeOfLife(DateTime.Now);
+                ControlTimeOfLife();
             }
             
             public T Get(string key)
             {
                 (DateTime, T) keyData;
+                ControlTimeOfLife();
                 if (_cache.TryGetValue(key, out keyData))
                 {
-                    ControlTimeOfLife(DateTime.Now);
+                    ControlTimeOfLife();
                     return keyData.Item2;
                 }
                 else
                 {
-                    ControlTimeOfLife(DateTime.Now);
                     throw new KeyNotFoundException();
                 }
                     
