@@ -1,0 +1,16 @@
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.csproj.AssemblyReference.cache
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.GeneratedMSBuildEditorConfig.editorconfig
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.AssemblyInfoInputs.cache
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.AssemblyInfo.cs
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.csproj.CoreCompileInputs.cache
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4.deps.json
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4.runtimeconfig.json
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4.runtimeconfig.dev.json
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4.dll
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/ref/Task_4.dll
+/home/an_baitiakova/RiderProjects/Task_4/bin/Debug/net5.0/Task_4.pdb
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.dll
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/ref/Task_4.dll
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.pdb
+/home/an_baitiakova/RiderProjects/Task_4/obj/Debug/net5.0/Task_4.genruntimeconfig.cache
