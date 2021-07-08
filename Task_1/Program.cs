@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using static System.Linq.Enumerable;
 namespace Task_1
 {
-    class Program
-    {
-        static class GenerationInCollection
+    public static class GenerationInCollection
         {
-            public static IEnumerable<IEnumerable<T>> Combinations<T>(IEnumerable<T> collection, IEqualityComparer<T> comparer, int count) 
+            public static IEnumerable<IEnumerable<T>> Combinations<T>(this IEnumerable<T> collection, IEqualityComparer<T> comparer, int count) 
             {
                 if (collection == null)
                     throw new NullReferenceException();
@@ -21,7 +19,7 @@ namespace Task_1
                     .SelectMany(t => collection, (t1, t2) => t1.Concat(new T[] { t2 }));
             }
             
-            public static IEnumerable<IEnumerable<T>> Subsets<T>(IEnumerable<T> collection, IEqualityComparer<T> comparer)
+            public static IEnumerable<IEnumerable<T>> Subsets<T>(this IEnumerable<T> collection, IEqualityComparer<T> comparer)
             {
                 if (collection == null)
                     throw new NullReferenceException("Collection is empty!");
@@ -47,7 +45,7 @@ namespace Task_1
                 }
             }
             
-            public static IEnumerable<IEnumerable<T>> Permutations<T>(IEnumerable<T> collection, IEqualityComparer<T> comparer, int lengthOfCollection)
+            public static IEnumerable<IEnumerable<T>> Permutations<T>(this IEnumerable<T> collection, IEqualityComparer<T> comparer, int lengthOfCollection)
             {
                 if (collection == null)
                     throw new NullReferenceException("Collection is empty!");
@@ -61,23 +59,26 @@ namespace Task_1
             
         }
         
+        
+    class Program
+    {
         public static void PrintIEnumerable<T>(IEnumerable<IEnumerable<T>> collection)
-        {
-            Console.Write("[");
-            foreach (var item in collection)
-            {
-                Console.Write("[");
-                foreach (var item1 in item)
                 {
-                    Console.Write(" ");
-                    Console.Write(item1);
-                    Console.Write(" ");
+                    Console.Write("[");
+                    foreach (var item in collection)
+                    {
+                        Console.Write("[");
+                        foreach (var item1 in item)
+                        {
+                            Console.Write(" ");
+                            Console.Write(item1);
+                            Console.Write(" ");
+                        }
+                        Console.Write("]");
+                    }
+                    Console.Write("]");
+                    Console.WriteLine();
                 }
-                Console.Write("]");
-            }
-            Console.Write("]");
-            Console.WriteLine();
-        }
 
         static void Main(string[] args)
         {
